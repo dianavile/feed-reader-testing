@@ -33,7 +33,7 @@ These are the four main area I've tested
 
 - __`Initial Entries`__: this suite check if the default feed collection (the first element of allFeeds array) is properly loaded within the feed container in the HTML sheet. This means that our test must start after the contents are loaded, so the loadFeed function is called by the beforeEach function, to set the test start after the feed load. The test store the feed elements into an array, so if they are properly loaded the array's element are more than 0.
 
-- __``New Feed Selection__: this suite check if the new contents eventually selected by the user are properly properly loaded within the feed container in the HTML sheet to replace the olds. To make this we must start the test with a beforeEach, to ensure the content to be loaded correctly. The HTML code for the first feed collection is stored into a variable, as well as he second collection. In the end we compare the two variables and if the variables content is different, this means the also the HTML content is different.
+- __`New Feed Selection`__: this suite check if the new contents eventually selected by the user are properly properly loaded within the feed container in the HTML sheet to replace the olds. To make this we must start the test with a beforeEach, to ensure the content to be loaded correctly. The HTML code for the first feed collection is stored into a variable, as well as he second collection. In the end we compare the two variables and if the variables content is different, this means the also the HTML content is different.
 
 ## Requirements
 
