@@ -21,8 +21,6 @@ I've wrote four different kind of suite to test the main functionalities provide
 
 You can clone this repository or download it as a .zip file, then simply open the `index.html` file to open the RSS reader and check the test results on the page bottom.
 
-You can also try a live test version [here](https://ivanteso.github.io/feed-reader-testing/).
-
 ## Functionality
 
 These are the four main area I've tested
