@@ -41,11 +41,12 @@ $(function() {
     describe('The menu', function() {
         let body = document.getElementsByTagName('body')[0];
 
+
         // The visibility of the menu is determinated by the body's
         // 'menu-hidden' class. This test check if it's present in body
         // by default to properly hide the menu
         it('is hidden by default', function() {
-            expect(body.classList.value).toBe('menu-hidden');
+            expect(body.classList.contains('menu-hidden')).toBe(true);
         });
 
         // Since the body's class is toggled when the menu icon is clicked,
@@ -54,10 +55,10 @@ $(function() {
             let menuIcon = document.getElementsByClassName('menu-icon-link')[0];
 
             menuIcon.click();
-            expect(body.classList.value).toBe('');
+            expect(body.classList.contains('menu-hidden')).toBe(false);
 
             menuIcon.click();
-            expect(body.classList.value).toBe('menu-hidden');
+            expect(body.classList.contains('menu-hidden')).toBe(true);
         });
     });
 
