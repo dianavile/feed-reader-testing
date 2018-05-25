@@ -43,12 +43,12 @@ $(function() {
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
-         it('as name defined and not empty', function() {
-             for(feed of allFeeds) {
+        it('as name defined and not empty', function() {
+            for(feed of allFeeds) {
                  expect(feed.name).toBeDefined();
                  expect(allFeeds.url).not.toBe('');
-             };
-         });
+            };
+        });
     });
 
 
@@ -71,6 +71,15 @@ $(function() {
           * should have two expectations: does the menu display when
           * clicked and does it hide when clicked again.
           */
+        it('change visibility when the icon is clicked', function() {
+            let menuIcon = document.getElementsByClassName('menu-icon-link')[0];
+
+            menuIcon.click();
+            expect(body.classList.value).toBe('');
+
+            menuIcon.click();
+            expect(body.classList.value).toBe('menu-hidden');
+        });
     });
 
     /* TODO: Write a new test suite named "Initial Entries" */
