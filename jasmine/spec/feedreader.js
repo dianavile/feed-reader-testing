@@ -31,7 +31,7 @@ $(function() {
         it('as name defined and not empty', function() {
             for(feed of allFeeds) {
                  expect(feed.name).toBeDefined();
-                 expect(allFeeds.url).not.toBe('');
+                 expect(feed.name).not.toBe('');
             };
         });
     });
