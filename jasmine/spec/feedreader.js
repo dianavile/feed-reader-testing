@@ -22,7 +22,7 @@ $(function() {
         it('has an URL defined and not empty', function() {
             for(feed of allFeeds) {
                 expect(feed.url).toBeDefined();
-                expect(allFeeds.url).not.toBe('');
+                expect(feed.url).not.toBe('');
             };
         });
 
