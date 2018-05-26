@@ -73,8 +73,10 @@ $(function() {
             loadFeed(0, done);
         });
 
-        // This test store the loaded entries in an array called feeds. If they
-        // are properly loaded, the array's length should be more than 0
+        // This test store the feed container in a variable and all the first
+        // childrens in an array. The first childrens are the link loaded from
+        // the RSS collection, so if they are properly loaded the array should be
+        // greater than 0 
         it('are loaded within the .feed container', function() {
 
             let feedContainer = document.getElementsByClassName('feed')[0];
