@@ -73,15 +73,13 @@ $(function() {
             loadFeed(0, done);
         });
 
-        // This test store the feed container in a variable and all the first
-        // childrens in an array. The first childrens are the link loaded from
-        // the RSS collection, so if they are properly loaded the array should be
-        // greater than 0 
+        // This test store the feed entries in a variable, selecting first the
+        // feed container and then all the single entries. The variable is an array,
+        // so if the entries are properly loaded the array should be greater than 0
         it('are loaded within the .feed container', function() {
 
-            let feedContainer = document.getElementsByClassName('feed')[0];
-            let feedEntries = feedContainer.children;
-            expect(feedEntries.length).not.toBe(0);
+            let feedEntries = document.querySelector('.feed').querySelectorAll('.entry');
+            expect(feedEntries.length).toBeGreaterThan(0);
         });
     });
 
